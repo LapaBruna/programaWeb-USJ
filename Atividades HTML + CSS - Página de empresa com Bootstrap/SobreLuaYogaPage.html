@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lua Yoga</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="LuaYogaStiloPage.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bellota:ital,wght@1,300&display=swap" rel="stylesheet">    
+</head>
+
+<body>
+    <div class="container">
+        <div>
+            <!-- Nome do Site-->
+            <h1 id="TitiloDaPagina" class="display-1 text-center">Lua Yoga</h1>
+        </div>
+
+        <div>
+            <div>
+                <!-- Navegador - topo da pagina-->
+                <ul  id="NavegadorTopo" class="nav nav-tabs" role="tablist">
+                    <li id="NaveSobre" class="nav-item" role="presentation">
+                        <button id="navSobre" class="nav-link active navStilo" data-bs-toggle="tab"
+                            data-bs-target="#nav-Sobre""
+                            type=" button" role="tab" aria-controls="Sobre" aria-selected="true">Sobre</button>
+                    </li>
+                    <li id="NaveServico" class="nav-item" role="presentation">
+                        <button id="navServico" class="nav-link navStilo" data-bs-toggle="tab"
+                            data-bs-target="#nav-Servico" type="button" role="tab" aria-controls="profile"
+                            aria-selected="false">Serviços</button>
+                    </li>
+                    <li id="NaveCadastre" class="nav-item" role="presentation">
+                        <button id="navCadastro" class="nav-link navStilo" data-bs-toggle="tab"
+                            data-bs-target="#nav-Cadastre" type="button" role="tab" aria-controls="Cadastre"
+                            aria-selected="false">Cadastre seu pedido</button>
+                    </li>
+                </ul>
+
+                <div id="nave-SobreContent" class="tab-content" >
+                   
+                    <!-- Nav - Sobre-->
+                    <div class="tab-pane fade show active" id="nav-Sobre" role="tabpanel" aria-labelledby="nav-Sobre-tab">
+                        <div id="ulMainSobre" class="container ulMain">
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                    <!-- Conteúdo da tabela a esquerda-->
+                                    <!-- Texto a esquerda-->
+
+                                    <div class="container">
+                                        <h4 id="subTitulo" class="display-2">
+                                            Terapia corporal
+                                        </h4>
+                                        <div class="container">
+                                            <h6 class="display-6 campoTextoSobreLua">
+                                                Com <span class="textoSalmao"> Lua Yoga </span> tu vais seguir um
+                                                caminho que te
+                                                leve para dentro de si mesma, para reconectar com o teu eu. É lá que tu
+                                                és
+                                                feliz, plena e realizada.
+                                            </h6>
+                                        </div>
+
+                                        <br />
+                                        <div class="container">
+                                            <h6 class="display-6 campoTextoSobreLua"> Todo dia é dia de celebrar essa
+                                                prática
+                                                milenar que transforma vidas. Presenteie a si mesma com uma <a href=""
+                                                    class="text-decoration-none textoSalmao">terapia corporal</a>, uma
+                                                <a href="" class="text-decoration-none textoSalmao">
+                                                    aula de Yôga</a>, ou uma <a href=""
+                                                    class="text-decoration-none textoSalmao"> massagem relaxante </a>.
+                                            </h6>
+                                            <br />
+                                            <p class="blockquote-footer text-end">Comemore uma vida leve e
+                                                feliz!
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Conteúdo da tabela a direita-->
+
+                                <div class="col-6 col-md-4 contImag">
+
+                                    <!-- Imagem-->
+
+                                    <img id="imgDestinoPlacaSobre" alt="Imagem de placas" src="destinoPlaca.jpg" class="img-fluid bordaImg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nav - Serviço-->
+                    <div class="tab-pane fade" id="nav-Servico" role="tabpanel" aria-labelledby="nav-Servico-tab">
+                        <div id="ulMainServico" class="container ulMain">
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                    <!-- Conteúdo da tabela a esquerda-->
+                                    <!-- Texto a esquerda-->
+
+                                    <div class="container">
+                                        <div class="row">
+
+                                            <div class="col-4 ">
+                                                <div class="list-group produtoTextStilo" id="list-tab-servico" role="tablist">
+
+                                                    <a class="list-group-item list-group-item-action active ListaServicos"
+                                                        id="list-Terapia-list" data-bs-toggle="list" href="#list-Terapia"
+                                                        role="tab" aria-controls="list-Terapia">Terapia corporal</a>
+
+                                                    <a class="list-group-item list-group-item-action ListaServicos"
+                                                        id="list-Yoga-list" data-bs-toggle="list"
+                                                        href="#list-Yoga" role="tab"
+                                                        aria-controls="list-Yoga">Aula de Yôga</a>
+
+                                                    <a class="list-group-item list-group-item-action ListaServicos"
+                                                        id="list-messages-list" data-bs-toggle="list"
+                                                        href="#list-messages" role="tab"
+                                                        aria-controls="list-messages">Massagem relaxante</a>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-8">
+                                                <div id="nav-tabServicos" class="tab-content" >
+                                                    <div class="tab-pane fade show active" id="list-Terapia"
+                                                        role="tabpanel" aria-labelledby="list-Terapia-list">
+
+                                                        <!--Terapia corporal-->
+                                                        <ul>
+                                                            <li class="list-group-item produtoTextStilo"> Com um
+                                                                investimento de <span class="textoGold">300,00</span>
+                                                                reais você leva numa
+                                                                sessão de duas hora de <span class="textoSalmao">
+                                                                    massagem
+                                                                    relaxante + reiki + oleos terapeuticos </span> com
+                                                                ou sem pedras quentes para o seu
+                                                                bem estar.</li>
+
+                                                            <li class="list-group-item produtoTextStilo"> Somente hoje,
+                                                                se você comprar um pacote de <span class="textoGold"> 4
+                                                                    seções </span> terapêutica você
+                                                                poderá <span class="textoGold">presentear</span> 3
+                                                                amigos com uma seção terapeutica
+                                                                totalmente gratuita.</li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="list-Yoga" role="tabpanel"
+                                                        aria-labelledby="list-Yoga-list">
+
+                                                        <!--Aula de Yôga-->
+                                                        <ul>
+                                                            <li class="list-group-item produtoTextStilo"> Com um
+                                                                investimento de <span class="textoGold">200,00</span>
+                                                                reais você leva numa
+                                                                aula de yoga com uma <span
+                                                                    class="textoSalmao">professora certificada</span>.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="tab-pane fade" id="list-messages" role="tabpanel"
+                                                        aria-labelledby="list-messages-list">
+
+                                                        <!--Massagem relaxante-->
+                                                        <ul>
+                                                            <li class="list-group-item produtoTextStilo"> Com um
+                                                                investimento de <span class="textoGold">150,00</span>
+                                                                reais você leva numa
+                                                                sessão de uma hora de <span class="textoSalmao">massagem
+                                                                    relaxante</span> com ou sem pedras quentes para o
+                                                                seu
+                                                                bem estar.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Conteúdo da tabela a direita-->
+                                <!-- Imagem-->
+
+                                <div class="col-6 col-md-4 contImag">
+                                    <img id="imgDestinoPlacaServico" alt="Imagem de placas" src="destinoPlacaTela2.jpg" class="img-fluid bordaImg" />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nav - Cadastre seu pedido-->
+                    <div class="tab-pane fade" id="nav-Cadastre" role="tabpanel" aria-labelledby="nav-Cadastre-tab">
+                        <div id="ulMainCadastre" class="container ulMain">
+                            <div class="row">
+                                <div class="col-md-8">
+
+                                    <!-- Conteúdo da tabela a esquerda-->
+                                    <!-- Texto a esquerda-->
+                                    <!-- Formulário-->
+
+                                    <div class="container">
+                                        <p class="lead text-lg-center cadastroStiloText">Pacote terapêutico
+                                            personalizado. </p>
+                                    </div>
+
+                                    <div class="container">
+                                        <div>
+                                            <p>Por favor preencha o cadastro a seguir que iremos enviar um e-mail com o
+                                                valor do pacote personalizado. </p>
+                                        </div>
+
+                                        <fieldset>
+                                            <legend>
+                                                <div class="row g-3 align-items-center">
+                                                    <div class="col-2">
+                                                        <label for="name" class="col-form-label">Name</label>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <input type="text" placeholder="Digite seu nome"
+                                                            class="form-control" id="campoNome">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 align-items-center">
+                                                    <div class="col-2">
+                                                        <label for="celular" class="col-form-label">Celular</label>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <input type="tel" placeholder="+55 048 9.9999-9999"
+                                                            class="form-control" id="campoCelular">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 align-items-center">
+                                                    <div class="col-2">
+                                                        <label for="email" class="col-form-label">E-mail</label>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <input type="email" placeholder="Aluno@USJ.aluno.com"
+                                                            class="form-control" id="campoEmail"
+                                                            aria-describedby="emailHelp">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 align-items-center">
+                                                    <div class="col-2">
+                                                        <label for="data" class="col-form-label">Data</label>
+                                                    </div>
+                                                    <div class="col-auto">
+                                                        <input type="date" placeholder="Digite a data"
+                                                            class="form-control" id="campoData">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row g-3 align-items-center">
+                                                    <div class="col-2">
+                                                        <label for="descricaoServico" class="form-label">Serviço</label>
+                                                    </div>
+                                                    <div class="col">
+                                                        <textarea class="form-control" id="campoDescricaoServico" rows="3" placeholder="Descrição do serviço"></textarea>
+                                                    </div>
+                                                </div>
+                                            </legend>
+                                        </fieldset>
+                                    </div>
+
+                                    <!-- Botões-->
+
+                                    <div>
+                                        <div class="containerButton">
+                                            <div class="d-grid gap-2">
+                                                <button id="btnSubimeter" type="submit" class="btn btn-outline-danger btn-lg btnSubmeter">Submeter</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Conteúdo da tabela a direita-->
+                                <div class="col-6 col-md-4 contImag">
+
+                                    <!-- Imagem-->
+                                    <img id="imgDestinoPlacaDescricao" alt="Imagem de placas" src="destinoPlacaTela3.jpg" class="img-fluid bordaImg" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+#TitiloDaPagina {
+  font-family: "Poiret One", cursive;
+  font: size 78px;
+  font-weight: bold;
+  text-shadow: 3px 3px #772c29;
+  color: #ff6347;
+}
+#NavegadorTopo {
+  border-radius: 10px;
+  background-image: linear-gradient(180deg, #ffe8de, #fffcfb);
+}
+
+#subTitulo {
+  color: #772c29;
+  font-family: "Bellota", cursive;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.ulMain {
+  border-radius: 10px;
+  background-color: #fcede7;
+}
+
+.nav {
+  padding-left: 20px;
+}
+
+.navStilo {
+  color: #772c29;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: #ff6347;
+}
+
+.nav .nav-tabs .nav-item.show .nav-link,
+.nav-tabs .nav-link.active {
+  background-color: transparent;
+  border: transparent;
+  border-bottom: none;
+}
+
+.ListaServicos {
+  background-color: #fcede7;
+}
+
+.ListaServicos:hover {
+  background-color: transparent;
+}
+
+.list-group-item.active {
+  color: #772c29;
+  background-color: #fcede7;
+  border-color: #772c29;
+}
+
+.campoTextoSobreLua {
+  font-size: 28px;
+}
+
+.textoSalmao {
+  color: #ff6347;
+}
+
+.textoGold {
+  color: #f7bb4b;
+}
+
+.bordaImg {
+  border-style: double;
+  border-radius: 10px;
+  border-color: #772c29;
+}
+
+.contImag {
+  border-radius: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.produtoTextStilo {
+  margin-top: 10px;
+}
+
+.cadastroStiloText {
+  font-size: 28px;
+  color: #772c29;
+  margin-top: 5px;
+}
+
+.btnSubmeter {
+  color: #ff6347;
+  border-color: #772c29;
+}
+a:hover {
+  color: #f7bb4b;
+}

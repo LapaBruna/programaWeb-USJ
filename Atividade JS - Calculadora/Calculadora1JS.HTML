@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora em JS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="StiloCalculadoraPage.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="container ulMain">
+        <div class="container">
+            <div class="row">
+                <div class="align-self-center">
+                    <h1 id="tituloCal" class="display-6"> Calculadora em JS</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 displayResultado">
+                    <label class="col-form-label">Resultado: </label>
+                    <input id="resultado"></p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <div class="col-auto">
+                    </div>
+                    <div class="col-auto">
+                        <input id="primeiroNumero" type="text" class="form-control" placeholder="0">
+                    </div>
+                </div>
+
+                <div class="col-4">
+                    <input id="segundoNumero" type="text" class="form-control" placeholder="0">
+                </div>
+            </div>
+
+            <div class="row stloOperacoes">
+                <div class="col-2"></div>
+                <div class="col-2">
+                    <button id="soma" type="button" class="btn btn-outline-secondary btn-lg" onclick="opercao(soma)"> +
+                    </button>
+                </div>
+                <div id="subtracao" class="col-2">
+                    <button type="button" class="btn btn-outline-secondary btn-lg" onclick="opercao(subtrai)"> -
+                    </button>
+                </div>
+                <div class="col-2">
+                    <button id="divisao" type="button" class="btn btn-outline-secondary btn-lg"
+                        onclick="opercao(divide)"> % </button>
+                </div>
+                <div class="col-2">
+                    <button id="multiplicacao" type="button" class="btn btn-outline-secondary btn-lg"
+                        onclick="opercao(multiplica)"> * </button>
+                </div>
+            </div>
+
+            <div class="row stloOperacoes">
+                <div class="col-2"></div>
+                <div class="col-4">
+                    <button id="limpa" type="button" class="btn btn-outline-danger btn-lg"
+                        onclick="limpa()">Limpar</button>
+                </div>
+                <div class="col-4">
+                    <button id="calcula" type="submit" class="btn btn-outline-secondary btn-lg"
+                        onclick="calcula()">Calcular</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+
+<script>
+    function opercao(operador) {
+        return calculo = operador;
+    }
+
+    function soma(primeiroNumero, segundoNumero) {
+        var valor = primeiroNumero + segundoNumero;
+        resultado.value = "" + valor;
+    }
+    function subtrai(primeiroNumero, segundoNumero) {
+        var valor = (primeiroNumero - segundoNumero);
+        resultado.value = valor;
+    }
+    function multiplica(primeiroNumero, segundoNumero) {
+        var valor = (primeiroNumero * segundoNumero)
+        resultado.value = "" + valor;
+    }
+    function divide(primeiroNumero, segundoNumero) {
+        if (primeiroNumero == 0 || segundoNumero == 0) {
+            resultado.value = "" + 0;
+        } else {
+            var valor = Math.round(primeiroNumero / segundoNumero);
+            resultado.value = "" + valor;
+        }
+    }
+
+    var calculo;
+    function calcula() {
+        var primeiroNumero = Number(document.getElementById('primeiroNumero').value);
+        var segundoNumero = Number(document.getElementById('segundoNumero').value);
+
+        if (calculo === soma) {
+            soma(primeiroNumero, segundoNumero);
+        } else if (calculo === subtrai) {
+            subtrai(primeiroNumero, segundoNumero);
+        } else if (calculo === multiplica) {
+            multiplica(primeiroNumero, segundoNumero);
+        } else if (calculo === divide) {
+            divide(primeiroNumero, segundoNumero);
+        }
+    }
+
+    function limpa() {
+        resultado.value = "";
+        primeiroNumero.value = "";
+        segundoNumero.value = "";
+    }
+</script>
