@@ -97,3 +97,7 @@
 a:hover {
   color: #f7bb4b;
 }
+a {
+  color: #772c29;
+  text-decoration: none !important;
+}
