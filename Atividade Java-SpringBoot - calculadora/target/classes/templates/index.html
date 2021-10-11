@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora Java spring boot</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="../static/css/EstiloCalculadoraPage.css" th:href="@{/css//EstiloCalculadoraPage.css}" rel="stylesheet"
+        type="text/css">
+</head>
+
+<body>
+    <form action="calcular" method="POST">
+        <div class="container ulMain">
+            <div class="container">
+                <div class="row">
+                    <div class="align-self-center">
+                        <h1 id="tituloCal" class="display-6"> Calculadora em Java spring boot</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8 displayResultado">
+                        <label for="resultado" class="col-form-label">Resultado: </label>
+                        <p th:text="${resultado}"></p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-4">
+                        <div class="col-auto">
+                            <div class="col-auto">
+                                <label for="n1">Digite o primeiro número: </label>
+                                <input type="text" name="n1" id="n1" class="form-control" placeholder="0" required />
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <div class="col-auto">
+                                <label for="n2">Digite o segundo número: </label>
+                                <input type="text" name="n2" id="n2" class="form-control" placeholder="0" required />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row stloOperacoes">
+                        <div class="col-2"></div>
+                        <div class="col-2">
+                            <input name="operador" id="Somar" type="submit" class="btn btn-outline-secondary btn-lg"
+                                value="Somar" />
+                        </div>
+                        <div id="subtracao" class="col-2">
+                            <input name="operador" id="subtrair" type="submit" class="btn btn-outline-secondary btn-lg"
+                                value="subtrair" />
+                        </div>
+                        <div class="col-2">
+                            <input name="operador" id="dividir" type="submit" class="btn btn-outline-secondary btn-lg"
+                                value="dividir" />
+                        </div>
+                        <div class="col-2">
+                            <input name="operador" id="multiplicar" type="submit"
+                                class="btn btn-outline-secondary btn-lg" value="multiplicar" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </form>
+</body>
